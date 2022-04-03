@@ -1,0 +1,75 @@
+button {
+    transition: all 0.3s;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: transparent;
+}
+.header__btn {
+    position: relative;
+    z-index: 20;
+}
+.header__phone-btn {
+    margin-right: 30px;
+    padding: 13px 26px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid $first-accent;
+    color: $first-accent;
+}
+.about__btn {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding: 15px 127px 15px 15px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    margin-bottom: 11px;
+    background-color: $first-accent;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 48px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-color: #de774b;
+        top: 0;
+        right: 0;
+        background-position: center;
+        background-image: url("/images/icons/about-btn-icon.svg");
+    }
+}
+.howwework__item-btn {
+    border: none;
+    margin-left: auto;
+}
+.control-btns__btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #ffffff;
+    opacity: 0.4;
+    font-size: 18px;
+    line-height: 22px;
+    border-bottom: 1px solid grey;
+    &:hover {
+        opacity: 1;
+        color: $second-accent;
+        border-bottom: 1px solid $second-accent;
+    }
+}
+
+.form__btn {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    padding: 14px 54px;
+    margin: 32px auto 0;
+    border: 3px solid #fff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    border-radius: 5px;
+}
